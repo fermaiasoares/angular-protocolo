@@ -1,0 +1,31 @@
+.container {
+    @apply flex flex-col p-5 rounded-xl bg-sky-50;
+
+    h2 {
+        @apply pb-2 text-2xl;
+    }
+
+    table {
+        @apply mt-5;
+    }
+
+    ul {
+        @apply flex;
+
+        li {
+            @apply p-2 rounded transition-all border-solid border-2 border-cyan-700 text-cyan-900;
+
+            & + li {
+                @apply ml-2;
+            }
+
+            &.active {
+                @apply bg-sky-700 text-cyan-100;
+            }
+
+            &:hover {
+                @apply bg-sky-700 text-cyan-100;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<div class="container">
+    <h2>Usuários</h2>
+
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Perfil</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.isAdmin ? 'Administrador' : 'Usuário Comum'}}</td>
+                <td>Active</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li><a href=""><<</a></li>
+        <li><a href=""><</a></li>
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li class="active"><a href="">5</a></li>
+        <li><a href="">7</a></li>
+        <li><a href="">8</a></li>
+        <li><a href="">9</a></li>
+        <li><a href="">10</a></li>
+        <li><a href="">></a></li>
+        <li><a href="">>></a></li>
+    </ul>
+</div>

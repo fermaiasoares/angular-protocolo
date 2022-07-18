@@ -1,0 +1,30 @@
+<div class="bg-zinc-800">
+    <div class="bg-galaxy md:w-[50vw] xl:w-[60vw] h-full bg-cover bg-no-repeat md:hidden"></div>
+    <div class="container">
+        <div class="content">
+
+            <img src="https://source.unsplash.com/360x180/?planet" alt="logo" class="logo">
+
+            <h2>Entre com sua conta</h2>
+            <form>
+                <!-- <label for="email">E-mail</label> -->
+                <input type="text" name="email" id="email" placeholder="Digite seu email">
+
+                <!-- <label for="password">Senha</label> -->
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+                <label for="remember">
+                    <input type="checkbox" name="remember" id="remember">
+                    Lembrar-me
+                </label>
+
+                <button type="submit">Acessar</button>
+
+                <a href="#">Esqueci minha senha</a>
+            </form>
+
+
+            <a [routerLink]="['/auth/sign-up']" [state]="{ test: 123456 }">Cadastrar</a>
+        </div>
+    </div>
+</div>

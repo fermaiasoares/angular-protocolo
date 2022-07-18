@@ -1,0 +1,35 @@
+div {
+    @apply min-h-screen flex flex-row;
+
+    .container {
+        @apply flex flex-1 items-center justify-center;
+
+        .content {
+            @apply flex flex-col items-center justify-center animate-appear-from-left w-[400px];
+
+            .logo {
+                @apply mb-12;
+            }
+
+            h2 {
+                @apply mb-6 text-2xl font-semibold text-amber-600;
+            }
+
+            form {
+                @apply flex flex-col gap-4 w-full;
+
+                input[type="text"], input[type="password"] {
+                    @apply p-2 rounded-md w-full;
+                }
+
+                button {
+                    @apply p-2 rounded-md w-full bg-amber-600;
+                }
+            }
+
+            > a {
+                @apply absolute bottom-12;
+            }
+        }
+    }
+}

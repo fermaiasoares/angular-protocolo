@@ -1,0 +1,23 @@
+<div class="bg-zinc-800">
+    <div class="container">
+        <div class="content">
+            <img src="https://source.unsplash.com/360x180/?planet" alt="logo" class="logo">
+
+            <h2>Criar uma conta</h2>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+
+                <input type="text" name="email" id="email" placeholder="Digite seu email">
+
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+                <input type="password" name="password-confirmation" id="password-confirmation" placeholder="Confirme sua senha">
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <a [routerLink]="['/auth/sign-in']">Acessar</a>
+        </div>
+    </div>
+    <div class="bg-galaxy md:w-[50vw] xl:w-[60vw] h-full bg-cover bg-no-repeat md:hidden"></div>
+</div>

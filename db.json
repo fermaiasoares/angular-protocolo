@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": "cakhjda",
+      "name": "Fernando Maia",
+      "email": "fermaiasoares@aol.com",
+      "avatar_url": null,
+      "password": "123456789",
+      "isAdmin": true
+    },
+    {
+      "name": "Rochelle Christiansen",
+      "email": "Rosalyn_Spinka@gmail.com",
+      "password": "est",
+      "isAdmin": true,
+      "id": "ZdhemXy"
+    },
+    {
+      "name": "Gwendolyn Shanahan",
+      "email": "Karianne76@hotmail.com",
+      "password": "voluptate",
+      "isAdmin": false,
+      "id": "_Vs2I84"
+    },
+    {
+      "name": "Charlotte Kling",
+      "email": "Ayla.Howe32@yahoo.com",
+      "password": "est",
+      "isAdmin": true,
+      "id": "8SGtuCJ"
+    }
+  ],
+  "departments": [],
+  "claiments": []
+}
