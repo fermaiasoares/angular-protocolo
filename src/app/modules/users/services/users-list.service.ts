@@ -11,16 +11,12 @@ import { environment } from '../../../../environments/environment';
 export class UsersListService {
     constructor(private httpClient: HttpClient) { }
 
-    async getUsers(): Promise<User[]> {
-        try {
-            const users = new Promise<User[]>((resolve, _) => {
-                this.httpClient.get<User[]>(`${environment.apiUrl}/users`)
-                    .subscribe((res) => resolve(res));
-            })
+    async getUsersList(): Promise<User[]> {
+        const users = new Promise<User[]>((resolve, _) => {
+            this.httpClient.get<User[]>(`${environment.apiUrl}/users`)
+                .subscribe((res) => resolve(res));
+        })
 
-            return users;
-        } catch (error) {
-            return [];
-        }
+        return users;
     }
 }

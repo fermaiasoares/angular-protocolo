@@ -9,7 +9,8 @@ module.exports = {
         extend: {
             backgroundImage: {
                 //'galaxy': "url('https://source.unsplash.com/0o_GEzyargo')"
-                'galaxy': "url('https://source.unsplash.com/1600x1200/?planet')"
+                // 'galaxy': "url('https://source.unsplash.com/1600x1200/?planet')"
+                'galaxy': "url('assets/imgs/fractal_world.jpeg')"
             },
             keyframes: {
                 'appear-from-left': {
