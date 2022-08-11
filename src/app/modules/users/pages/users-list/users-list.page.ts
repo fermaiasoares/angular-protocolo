@@ -1,7 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 
-import { ApiService } from "src/app/services/api-service/api.service";
-
 import { User } from "../../interface/user";
 
 @Component({
@@ -13,10 +11,9 @@ import { User } from "../../interface/user";
 class UsersListPage implements OnInit {
     public users: User[] = []
 
-    constructor(private apiService: ApiService) {}
+    constructor() {}
 
     ngOnInit(): void {
-        this.apiService.getUsers().then(users => this.users = users);
     }
 }
 
